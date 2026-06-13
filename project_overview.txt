@@ -1,0 +1,332 @@
+================================================================================
+                    CURATOR AI UNIVERSITY PROJECT OVERVIEW
+================================================================================
+
+PROJECT PURPOSE
+================================================================================
+Curator AI is an intelligent system that ingests academic materials (PDFs of 
+textbooks, lecture notes, and solutions), processes them using OCR and text 
+extraction, stores embeddings in a vector database, and provides an API for 
+querying and generating academic assignments based on the knowledge base.
+
+
+DIRECTORY STRUCTURE & CONTENTS
+================================================================================
+
+CORE APPLICATION FILES (Root Level)
+------------------------------------
+
+main.py
+  - FastAPI application (the main entry point)
+  - Defines 3 main endpoints: /upload, /search, /generate-assignment
+  - Handles file uploads to data/academic folder
+  - Powers the search functionality using LibraryManager
+  - Generates PDF assignments using SynthesisEngine
+  - Run with: uvicorn main:app --reload
+
+config.py
+  - Configuration management
+  - Defines paths for DATA_ACADEMIC, DATA_REJECTED, and DB_PATH
+  - Centralizes all path configurations
+
+check_config.py
+  - Configuration verification utility
+  - Simple script to verify that data paths and database exist
+
+requirements.txt
+  - Currently empty (dependencies should be documented here)
+
+test_ingest.py
+  - Basic module import test
+
+
+SOURCE CODE (src/ folder)
+------------------------------------
+
+src/ingestor.py - PDF Ingestion Service
+  - extract_text_from_pdf(): Reads PDFs using pdfplumber, falls back to 
+    pytesseract for OCR
+  - chunk_text(): Splits extracted text into 512-character chunks with 
+    64-character overlap
+  - Creates LangChain Document objects with source metadata
+
+src/retriever.py - Query & Retrieval Engine
+  - LibraryManager class manages vector database interactions
+  - Uses Chroma for vector storage (similarity search)
+  - Queries the knowledge base with k=3 results
+  - Routes queries through OllamaLLM for AI-curated responses
+  - Supports two response modes: "notes" (brief) or "detailed" (comprehensive)
+  - Run with: python -m src.retriever
+
+src/llm_gateway.py - LLM & Embedding Interfaces
+  - RobustOllamaEmbeddings: Handles batch embedding requests to Ollama service
+    * Uses "nomic-embed-text" model
+    * Implements embed_documents() and embed_query() methods
+    * Batch size of 2 for stability
+  - OllamaLLM: Wrapper for LLM generation requests
+    * Uses "llama3" model
+    * Calls http://localhost:11434/api/generate
+
+
+DEEP LEARNING MODELS (dl_models/ folder)
+------------------------------------
+
+dl_models/handwriting_gen.py - PDF Generation Engine
+  - SynthesisEngine class
+  - generate_pdf_assignment(): Creates professional PDFs with:
+    * Header: "AI Generated Academic Assignment"
+    * Content wrapped to 80 characters per line
+    * Automatic page breaks when content runs off page
+    * Uses ReportLab for PDF generation
+
+
+ARCHIVE/LEGACY SCRIPTS (archive_scripts/ folder)
+------------------------------------
+These represent the project's evolution:
+
+archive_scripts/run_ingest.py - Original Multiprocessing Ingestion
+  - Processes PDFs from ./Academic_Knowledge directory
+  - Uses multiprocessing for parallel PDF processing (5-minute timeout per file)
+  - Handles both text extraction and OCR
+  - Creates chunks and stores in Chroma database
+
+archive_scripts/ingest_multimodal.py - Advanced Ingestion
+  - Uses unstructured.partition.pdf for better PDF parsing
+  - Custom Ollama embeddings implementation
+
+archive_scripts/chat.py - CLI Chatbot Interface
+  - Interactive terminal chatbot using LangChain
+  - Displays sources for each answer
+  - Uses retrieval chains for context-aware responses
+
+archive_scripts/app.py - Utility
+archive_scripts/check_path.py - Utility
+archive_scripts/test_connection.py - Utility
+
+archive_scripts/success.txt - Log of successfully ingested PDFs
+  - Contains 10 successfully processed PDFs
+
+archive_scripts/failed.txt - Log of failed PDFs
+  - Contains 48+ PDFs with failure reasons:
+    * Embedding API errors
+    * OCR/text extraction timeouts
+    * Scanned/image-only PDFs (no readable text)
+
+
+DATA STORAGE (data/ folder)
+------------------------------------
+
+data/academic/ - Active Curriculum Documents (14 PDFs)
+  - 1201_FOP_ALL(Faculty_Lectures).pdf - Foundation of Programming
+  - 1202_DLD Solutions & Lectures - Digital Logic Design
+  - 2101_DSA_ALL(Faculty_Lecture).pdf - Data Structures & Algorithms
+  - 2103_EEE_ALL(Faculty_Lecture).pdf - Electrical Engineering
+  - 2201_DBMS Solution & Concepts - Database Management Systems
+  - 2203_Datacom_ALL(Faculty_Lecture).pdf - Data Communication
+  - 2204_CAO_ALL_(Faculty_Lecture).pdf - Computer Architecture & Organization
+  - 3101_Networking - Computer Networking (top-down approach)
+  - 3103_MPMC_ALL(Faculty_Lecture).pdf - Microprocessors
+  - 3105_Calculus_ALL(Faculty_Lecture).pdf - Calculus Lectures
+  - 3202_FLCA - Formal Language & Computability Automata
+  - 3204_FLCA Solution Manual & Lectures
+
+data/rejected/ - Rejected/Problematic PDFs (48 files)
+  - Physics textbooks (scanned/image-only)
+  - Mathematics books (scanned formats)
+  - OOP & Electronics materials (OCR/embedding failures)
+  - Mechanical Engineering materials
+  - Software Engineering books
+  - Numerical Methods materials
+
+data/extracted_data/ - Empty (Reserved for extracted content)
+
+
+VECTOR DATABASE (multimodal_db/ folder)
+------------------------------------
+
+chroma.sqlite3
+  - Main Chroma vector database
+  - Stores embeddings for the 14 successfully processed academic PDFs
+  - Persists semantic vectors for similarity search
+
+8a9e4874-b021-4ebd-8da3-d4c914cab4df/
+  - Chroma internal storage directory
+
+
+OTHER DIRECTORIES
+------------------------------------
+
+fixed_books/ - Problematic PDFs Being Debugged (7 files)
+  - C programming materials
+  - Digital systems
+  - Physics and mathematics materials
+
+extracted_data/ - Currently empty
+
+
+SYSTEM ARCHITECTURE
+================================================================================
+
+                           User/API Client
+                                 ↓
+                            FastAPI (main.py)
+                                 ↓
+         ┌───────────────────────┼───────────────────────┐
+         ↓                       ↓                       ↓
+    [/upload]            [/search]               [/generate-assignment]
+         ↓                       ↓                       ↓
+   Ingestor Service    LibraryManager        Search + SynthesisEngine
+         ↓                       ↓                       ↓
+  PDF to Text/Chunks   Similarity Search         PDF Output
+         ↓                       ↓
+    Chroma DB          LLM Gateway
+                             ↓
+                        AI Response
+
+External Services (Local Ollama):
+  - http://localhost:11434/api/embed (nomic-embed-text)
+  - http://localhost:11434/api/generate (llama3)
+
+
+KEY TECHNOLOGIES
+================================================================================
+
+API Framework            | FastAPI
+Vector Database          | Chroma
+PDF Processing           | pdfplumber + pytesseract (OCR)
+Embeddings               | Ollama (nomic-embed-text)
+Language Model           | Ollama (llama3)
+PDF Generation           | ReportLab
+Text Processing          | LangChain
+Data Format              | LangChain Documents
+
+
+WORKFLOW EXAMPLE
+================================================================================
+
+1. User uploads a PDF via /upload
+   → Stored in data/academic
+
+2. Ingestion extracts text with OCR fallback
+   → Creates chunks with metadata
+
+3. Chunks are embedded via Ollama
+   → Stored in Chroma vector database
+
+4. User queries via /search
+   → Similarity search returns top 3 results
+   → Results contextualized and sent to Llama3
+   → AI-curated response returned
+
+5. Optional: /generate-assignment
+   → Creates formatted PDF output
+
+
+CURRENT STATUS
+================================================================================
+
+WORKING:
+  ✓ FastAPI server with 3 operational endpoints
+  ✓ Vector database with 14 successfully ingested PDFs
+  ✓ Ollama-based embeddings and LLM integration
+  ✓ PDF generation for assignments
+  ✓ Chunking and metadata storage
+
+ISSUES IDENTIFIED:
+  ⚠ High PDF Failure Rate: 48 out of 62 PDFs failed ingestion
+    - Root causes: OCR timeouts, scanned PDFs, embedding API inconsistencies
+  ⚠ Empty requirements.txt: Dependencies not documented
+  ⚠ Ollama Dependency: Requires local Ollama service running on port 11434
+  ⚠ Limited Knowledge Base: Only 14 PDFs successfully processed
+  ⚠ Archive Scripts Outdated: Original ingestion code has different architecture
+
+
+API ENDPOINTS
+================================================================================
+
+GET /
+  - Health check endpoint
+  - Returns: {"status": "online"}
+
+POST /upload
+  - Upload documents for processing
+  - Parameters: file (UploadFile)
+  - Saves to: data/academic/{filename}
+  - Returns: {"message": "Successfully uploaded {filename}."}
+
+GET /search
+  - Search the academic library
+  - Parameters: 
+    * question (str) - Search query
+    * request_notes (bool) - Optional: return notes format if true
+  - Returns: {"answer": str, "sources": []}
+
+POST /generate-assignment
+  - Generate an AI-curated PDF assignment
+  - Parameters: question (str, Form)
+  - Process:
+    1. Searches library for relevant content
+    2. Generates clean, professional PDF
+  - Returns: PDF file (application/pdf)
+
+
+DEPENDENCIES (Inferred from code)
+================================================================================
+
+Core Framework:
+  - fastapi
+  - uvicorn (ASGI server)
+
+PDF Processing:
+  - pdfplumber
+  - pytesseract (requires Tesseract OCR)
+  - reportlab
+
+Database & Embeddings:
+  - chromadb
+  - langchain
+  - langchain_chroma
+  - langchain_core
+
+Remote Services:
+  - requests (for Ollama API calls)
+  - ollama (optional Python client)
+
+Additional:
+  - sentence-transformers (mentioned in terminal)
+
+External Requirements:
+  - Ollama service (running locally on port 11434)
+  - Tesseract OCR (for pytesseract)
+
+
+RECENT ACTIVITY
+================================================================================
+
+Terminal Activity:
+  - Last command: pip install chromadb sentence-transformers
+  - Exit code: 0 (Success)
+  - Working directory: E:/Courses/My_AI_University_Project
+
+README.md Commands:
+  - python -m src.retriever (Run retriever module)
+  - uvicorn main:app --reload (Start FastAPI server)
+
+
+NOTES & RECOMMENDATIONS
+================================================================================
+
+1. Document all dependencies in requirements.txt
+2. Investigate PDF ingestion failures to increase knowledge base size
+3. Consider implementing retry logic for failed PDFs
+4. Add error handling for missing Ollama service
+5. Implement logging for debugging
+6. Add authentication for API endpoints
+7. Consider caching frequently searched queries
+8. Implement rate limiting for production use
+9. Add test coverage for core functions
+10. Document Ollama setup requirements
+
+================================================================================
+END OF PROJECT OVERVIEW
+================================================================================

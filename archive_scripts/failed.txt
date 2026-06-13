@@ -1,0 +1,144 @@
+1201_FOP C The Complete Reference 4th Ed Herbert Schildt.pdf | Error: 'embeddings'
+1201_FOP E. Balagurusamy - Programming in ANSI C-McGraw Hill Education (India) (2016) (1).pdf | Error: 'embeddings'
+1202_DLD Computer System Architecture_Moris Mano.pdf | Error: 'embeddings'
+1202_DLD Digital_systems_principles_and_app_Tocci.pdf | Error: No readable text found (likely scanned/image-only)
+1203_Physics (International Lunion of Crystallography Texts on Crystallography) Christopher Hammond - The Basics of Crystallography and Diffraction-OUP (2009).pdf | Error: 'embeddings'
+1203_Physics Fundamentals of Physics Extended, 11ed, Halliday, Resnick, Walker, 2018 (1).pdf | Error: 'embeddings'
+1203_Physics Halliday_Resnick_Walker_Fundamentals(solution).pdf | Error: 'embeddings'
+1203_Physics Hugh D. Young, Roger A. Freedman - University Physics with Modern Physics-Pearson Education (2015).pdf | Error: 'embeddings'
+1203_Physics L. Kinsler, et al. - Fundamentals of Acoustics-Wiley (2000) (1).pdf | Error: No readable text found (likely scanned/image-only)
+1203_Physics Leonid V. Azaroff_ James J. Brophy - Electronic Processes in Materials-McGraw-Hill (1963).pdf | Error: 'embeddings'
+1204_Math differential-equations-3rd-edition-shepley-lrosspdf_compress.pdf | Error: No readable text found (likely scanned/image-only)
+1204_Math Ross_Book_4th_ed.pdf | Error: No readable text found (likely scanned/image-only)
+1204_Math Ross_solution_4th_ed.pdf | Error: No readable text found (likely scanned/image-only)
+2102_OOP (Complete Reference Series) Herbert Schildt -.pdf | Error: 'embeddings'
+2103_EEE dokumen_pub_electronic_devices_and_circuits_5nbsped_9780195693409.pdf | Error: 'embeddings'
+2103_EEE electronic-devices-by-floyd-9th-edition.pdf | Error: 'embeddings'
+2103_EEE Electronic_Devices_and_Circuits_David_A.pdf | Error: 'embeddings'
+2104_BGS_ALL(Faculty_Lecture).pdf | Error: 'embeddings'
+2105_Linear_Algebra Elementary-Linear-Algebra-Applications-Version-Howard-Anton-Chris-Rorres-Edisi-1-2013.pdf | Error: 'embeddings'
+2201_DBMS(I) Database-System-Concepts-6th-edition.pdf | Error: 'embeddings'
+2201_DBMS(I) Database_System_Concepts_7th_Edition.pdf | Error: 'embeddings'
+2202_DAA(I) Data Structures and Algorithms in Python.pdf | Error: 'embeddings'
+2202_DAA(I) Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf | Error: 'embeddings'
+2202_DAA(I)_ALL(Faculty_Lecture).pdf | Error: 'embeddings'
+2204_CAO Computer Architecture A Quantitative Approach (5th edition).pdf | Error: 'embeddings'
+2204_CAO Computer Organization and Design- The HW_SW Inteface 5th edition - David A. Patterson & John L. Hennessy.pdf | Error: 'embeddings'
+2204_CAO McGraw_Hill_Series_in_Computer_Engineering_John_Patrick_Hayes_Computer.pdf | Error: 'embeddings'
+2204_CAO Patterson4.pdf | Error: 'embeddings'
+2205_Mecha Mechatronics by W. Bolton.pdf | Error: 'embeddings'
+2205_Mecha Programmable Logic Controllers 4th Edition (W Bolton).pdf | Error: 'embeddings'
+2205_Mecha_ALL(Faculty_Lecture).pdf | Error: No readable text found (likely scanned/image-only)
+3102_SWE SE_Pressman.pdf | Error: 'embeddings'
+3102_SWE Software Engineering - Ian Sommerville_10thEd.pdf | Error: 'embeddings'
+3103_MPMC Arm System-On-Chip Architecture.pdf | Error: 'embeddings'
+3103_MPMC Intel Microprocessor-Architecture,Programming and Interfacing,Barry B.Brey.pdf | Error: 'embeddings'
+3103_MPMC Programmable Logic Controllers by Frank D. Petruzella (1).pdf | Error: 'embeddings'
+3103_MPMC The 8051 Microcontroller A Systems Approach; Mazidi & McKinlay (2).pdf | Error: 'embeddings'
+3103_MPMC_ALL(Faculty_Lecture).pdf | Error: 'embeddings'
+3105_Calculus Calculus 10th edition H. Anton_solution.pdf | Error: 'embeddings'
+1201_FOP E. Balagurusamy - Programming in ANSI C-McGraw Hill Education (India) (2016) (1).pdf | Error: TIMEOUT
+1202_DLD Computer System Architecture_Moris Mano.pdf | Error: TIMEOUT
+1203_Physics (International Lunion of Crystallography Texts on Crystallography) Christopher Hammond - The Basics of Crystallography and Diffraction-OUP (2009).pdf | Error: TIMEOUT
+1203_Physics Fundamentals of Physics Extended, 11ed, Halliday, Resnick, Walker, 2018 (1).pdf | Error: TIMEOUT
+1203_Physics Halliday_Resnick_Walker_Fundamentals(solution).pdf | Error: TIMEOUT
+1203_Physics Hugh D. Young, Roger A. Freedman - University Physics with Modern Physics-Pearson Education (2015).pdf | Error: TIMEOUT
+1203_Physics Leonid V. Azaroff_ James J. Brophy - Electronic Processes in Materials-McGraw-Hill (1963).pdf | Error: TIMEOUT
+2102_OOP (Complete Reference Series) Herbert Schildt -.pdf | Error: TIMEOUT
+2103_EEE dokumen_pub_electronic_devices_and_circuits_5nbsped_9780195693409.pdf | Error: TIMEOUT
+2103_EEE electronic-devices-by-floyd-9th-edition.pdf | Error: TIMEOUT
+2103_EEE Electronic_Devices_and_Circuits_David_A.pdf | Error: TIMEOUT
+2104_BGS_ALL(Faculty_Lecture).pdf | Error: TIMEOUT
+2105_Linear_Algebra Elementary-Linear-Algebra-Applications-Version-Howard-Anton-Chris-Rorres-Edisi-1-2013.pdf | Error: TIMEOUT
+2201_DBMS(I) Database-System-Concepts-6th-edition.pdf | Error: TIMEOUT
+2201_DBMS(I) Database_System_Concepts_7th_Edition.pdf | Error: TIMEOUT
+2202_DAA(I) Data Structures and Algorithms in Python.pdf | Error: TIMEOUT
+2202_DAA(I) Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf | Error: TIMEOUT
+2202_DAA(I)_ALL(Faculty_Lecture).pdf | Error: TIMEOUT
+2204_CAO Computer Architecture A Quantitative Approach (5th edition).pdf | Error: TIMEOUT
+2204_CAO Computer Organization and Design- The HW_SW Inteface 5th edition - David A. Patterson & John L. Hennessy.pdf | Error: TIMEOUT
+2204_CAO McGraw_Hill_Series_in_Computer_Engineering_John_Patrick_Hayes_Computer.pdf | Error: TIMEOUT
+2204_CAO Patterson4.pdf | Error: TIMEOUT
+2205_Mecha Mechatronics by W. Bolton.pdf | Error: TIMEOUT
+2205_Mecha Programmable Logic Controllers 4th Edition (W Bolton).pdf | Error: TIMEOUT
+3102_SWE SE_Pressman.pdf | Error: TIMEOUT
+3102_SWE Software Engineering - Ian Sommerville_10thEd.pdf | Error: TIMEOUT
+3103_MPMC Arm System-On-Chip Architecture.pdf | Error: TIMEOUT
+3103_MPMC Intel Microprocessor-Architecture,Programming and Interfacing,Barry B.Brey.pdf | Error: TIMEOUT
+3103_MPMC Programmable Logic Controllers by Frank D. Petruzella (1).pdf | Error: TIMEOUT
+3103_MPMC The 8051 Microcontroller A Systems Approach; Mazidi & McKinlay (2).pdf | Error: TIMEOUT
+3105_Calculus Calculus 10th edition H. Anton_solution.pdf | Error: TIMEOUT
+1202_DLD Computer System Architecture_Moris Mano.pdf | Error: TIMEOUT
+1203_Physics (International Lunion of Crystallography Texts on Crystallography) Christopher Hammond - The Basics of Crystallography and Diffraction-OUP (2009).pdf | Error: TIMEOUT
+1202_DLD Computer System Architecture_Moris Mano.pdf | Error: TIMEOUT
+1203_Physics (International Lunion of Crystallography Texts on Crystallography) Christopher Hammond - The Basics of Crystallography and Diffraction-OUP (2009).pdf | Error: TIMEOUT
+1203_Physics Fundamentals of Physics Extended, 11ed, Halliday, Resnick, Walker, 2018 (1).pdf | Error: TIMEOUT
+1203_Physics Halliday_Resnick_Walker_Fundamentals(solution).pdf | Error: TIMEOUT
+1203_Physics Hugh D. Young, Roger A. Freedman - University Physics with Modern Physics-Pearson Education (2015).pdf | Error: TIMEOUT
+1203_Physics Leonid V. Azaroff_ James J. Brophy - Electronic Processes in Materials-McGraw-Hill (1963).pdf | Error: TIMEOUT
+2102_OOP (Complete Reference Series) Herbert Schildt -.pdf | Error: TIMEOUT
+2103_EEE dokumen_pub_electronic_devices_and_circuits_5nbsped_9780195693409.pdf | Error: TIMEOUT
+2103_EEE electronic-devices-by-floyd-9th-edition.pdf | Error: TIMEOUT
+2103_EEE Electronic_Devices_and_Circuits_David_A.pdf | Error: TIMEOUT
+2104_BGS_ALL(Faculty_Lecture).pdf | Error: TIMEOUT
+2105_Linear_Algebra Elementary-Linear-Algebra-Applications-Version-Howard-Anton-Chris-Rorres-Edisi-1-2013.pdf | Error: TIMEOUT
+2201_DBMS(I) Database-System-Concepts-6th-edition.pdf | Error: TIMEOUT
+2201_DBMS(I) Database_System_Concepts_7th_Edition.pdf | Error: TIMEOUT
+2202_DAA(I) Data Structures and Algorithms in Python.pdf | Error: TIMEOUT
+2202_DAA(I) Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf | Error: TIMEOUT
+2202_DAA(I)_ALL(Faculty_Lecture).pdf | Error: TIMEOUT
+2204_CAO Computer Architecture A Quantitative Approach (5th edition).pdf | Error: TIMEOUT
+2204_CAO Computer Organization and Design- The HW_SW Inteface 5th edition - David A. Patterson & John L. Hennessy.pdf | Error: TIMEOUT
+2204_CAO McGraw_Hill_Series_in_Computer_Engineering_John_Patrick_Hayes_Computer.pdf | Error: TIMEOUT
+2204_CAO Patterson4.pdf | Error: TIMEOUT
+2205_Mecha Mechatronics by W. Bolton.pdf | Error: TIMEOUT
+2205_Mecha Programmable Logic Controllers 4th Edition (W Bolton).pdf | Error: TIMEOUT
+3102_SWE SE_Pressman.pdf | Error: TIMEOUT
+3102_SWE Software Engineering - Ian Sommerville_10thEd.pdf | Error: TIMEOUT
+3103_MPMC Arm System-On-Chip Architecture.pdf | Error: TIMEOUT
+3103_MPMC Intel Microprocessor-Architecture,Programming and Interfacing,Barry B.Brey.pdf | Error: TIMEOUT
+3103_MPMC Programmable Logic Controllers by Frank D. Petruzella (1).pdf | Error: TIMEOUT
+3103_MPMC The 8051 Microcontroller A Systems Approach; Mazidi & McKinlay (2).pdf | Error: TIMEOUT
+3105_Calculus Calculus 10th edition H. Anton_solution.pdf | Error: TIMEOUT
+1201_FOP E. Balagurusamy - Programming in ANSI C-McGraw Hill Education (India) (2016) (1).pdf | TIMEOUT
+1202_DLD Computer System Architecture_Moris Mano.pdf | TIMEOUT
+1202_DLD Digital_systems_principles_and_app_Tocci.pdf | TIMEOUT
+1203_Physics (International Lunion of Crystallography Texts on Crystallography) Christopher Hammond - The Basics of Crystallography and Diffraction-OUP (2009).pdf | TIMEOUT
+1203_Physics Fundamentals of Physics Extended, 11ed, Halliday, Resnick, Walker, 2018 (1).pdf | TIMEOUT
+1203_Physics Halliday_Resnick_Walker_Fundamentals(solution).pdf | TIMEOUT
+1203_Physics Hugh D. Young, Roger A. Freedman - University Physics with Modern Physics-Pearson Education (2015).pdf | TIMEOUT
+1203_Physics L. Kinsler, et al. - Fundamentals of Acoustics-Wiley (2000) (1).pdf | TIMEOUT
+1203_Physics Leonid V. Azaroff_ James J. Brophy - Electronic Processes in Materials-McGraw-Hill (1963).pdf | TIMEOUT
+1204_Math differential-equations-3rd-edition-shepley-lrosspdf_compress.pdf | TIMEOUT
+1204_Math Ross_Book_4th_ed.pdf | TIMEOUT
+1204_Math Ross_solution_4th_ed.pdf | TIMEOUT
+2102_OOP (Complete Reference Series) Herbert Schildt -.pdf | TIMEOUT
+2103_EEE dokumen_pub_electronic_devices_and_circuits_5nbsped_9780195693409.pdf | TIMEOUT
+2103_EEE electronic-devices-by-floyd-9th-edition.pdf | TIMEOUT
+2103_EEE Electronic_Devices_and_Circuits_David_A.pdf | TIMEOUT
+2104_BGS_ALL(Faculty_Lecture).pdf | TIMEOUT
+2105_Linear_Algebra Elementary-Linear-Algebra-Applications-Version-Howard-Anton-Chris-Rorres-Edisi-1-2013.pdf | TIMEOUT
+2201_DBMS(I) Database-System-Concepts-6th-edition.pdf | TIMEOUT
+2201_DBMS(I) Database_System_Concepts_7th_Edition.pdf | TIMEOUT
+2202_DAA(I) Data Structures and Algorithms in Python.pdf | TIMEOUT
+2202_DAA(I) Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf | TIMEOUT
+2202_DAA(I)_ALL(Faculty_Lecture).pdf | TIMEOUT
+2204_CAO Computer Architecture A Quantitative Approach (5th edition).pdf | TIMEOUT
+2204_CAO Computer Organization and Design- The HW_SW Inteface 5th edition - David A. Patterson & John L. Hennessy.pdf | TIMEOUT
+2204_CAO McGraw_Hill_Series_in_Computer_Engineering_John_Patrick_Hayes_Computer.pdf | TIMEOUT
+2204_CAO Patterson4.pdf | TIMEOUT
+2205_Mecha Mechatronics by W. Bolton.pdf | TIMEOUT
+2205_Mecha Programmable Logic Controllers 4th Edition (W Bolton).pdf | TIMEOUT
+2205_Mecha_ALL(Faculty_Lecture).pdf | TIMEOUT
+3102_SWE SE_Pressman.pdf | TIMEOUT
+3102_SWE Software Engineering - Ian Sommerville_10thEd.pdf | TIMEOUT
+3103_MPMC Arm System-On-Chip Architecture.pdf | TIMEOUT
+3103_MPMC Intel Microprocessor-Architecture,Programming and Interfacing,Barry B.Brey.pdf | TIMEOUT
+3103_MPMC Programmable Logic Controllers by Frank D. Petruzella (1).pdf | TIMEOUT
+3103_MPMC The 8051 Microcontroller A Systems Approach; Mazidi & McKinlay (2).pdf | TIMEOUT
+3105_Calculus Calculus 10th edition H. Anton_solution.pdf | TIMEOUT
+1201_FOP E. Balagurusamy - Programming in ANSI C-McGraw Hill Education (India) (2016) (1).pdf | TIMEOUT
+1202_DLD Computer System Architecture_Moris Mano.pdf | TIMEOUT
+1202_DLD Digital_systems_principles_and_app_Tocci.pdf | TIMEOUT
+1203_Physics (International Lunion of Crystallography Texts on Crystallography) Christopher Hammond - The Basics of Crystallography and Diffraction-OUP (2009).pdf | TIMEOUT
+1203_Physics Fundamentals of Physics Extended, 11ed, Halliday, Resnick, Walker, 2018 (1).pdf | TIMEOUT
