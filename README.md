@@ -81,7 +81,7 @@ ollama pull nomic-embed-text
 ### Step 2 — Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/curator-ai.git
+git clone https://github.com/labonyapal/curator-ai.git
 cd curator-ai
 ```
 
@@ -245,6 +245,10 @@ curl "http://localhost:8000/search?question=Explain+binary+search+trees&request_
 ![Curator AI Dashboard](dashboard_screenshot.png)
 
 _The main dashboard shows document counts, search activity, AI analysis charts, and live system status for Llama3, ChromaDB, and the embedding service._
+
+## 🎥 Demo
+
+[![Watch the demo](https://img.youtube.com/vi/0INx6Z1HJVo/maxresdefault.jpg)](https://youtu.be/0INx6Z1HJVo)
 
 ---
 
